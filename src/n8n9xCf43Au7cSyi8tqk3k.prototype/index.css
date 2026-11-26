@@ -1,0 +1,39 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORT — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORT MUST NEVER BE DELETED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss';
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  --color-emerald-deep: #0b3d2e;
+  --color-brand: #0f6b4f;
+  --color-brand-hover: #0c5940;
+  --color-brand-soft: #dcefe6;
+  --color-mint: #a7e3c8;
+  --color-beige: #f6f0e4;
+  --color-sand: #ebe1cd;
+  --color-paper: #fffdf8;
+  --color-ink: #14231d;
+  --color-muted: #5a6a62;
+  --color-line: #e3dac6;
+  --color-loss: #b4472f;
+  --color-loss-soft: #f8e4dc;
+}
+
+html, body, #root {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
